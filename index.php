@@ -1,5 +1,7 @@
 <?php
-include './Database/database.php';
+include './database/database.php';
+
+$random_name = null; // Initialize $random_name to avoid undefined variable warning
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $your_name = $_POST['your_name'];
